@@ -1,0 +1,25 @@
+<header>
+  <h1>S&J</h1>
+  <nav>
+    <img
+      (click)="on()"
+      class="hamburger"
+      src="https://admiring-elion-a8bd77.netlify.com/img/nav-hamburger.png"
+      alt="Hamburger"
+      srcset=""
+    />
+    <div class="overlay">
+      <img
+        (click)="off()"
+        src="https://admiring-elion-a8bd77.netlify.com/img/nav-hamburger-close.png"
+        alt=""
+        srcset=""
+      />
+      <div class="aligner">
+        <a routerLink="" routerLinkActive="active">Home</a>
+        <a routerLink="/services">Services</a>
+        <a routerLink="/contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+</header>
