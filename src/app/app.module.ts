@@ -9,6 +9,8 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { ContactComponent } from "./contact/contact.component";
 import { ServicesComponent } from "./services/services.component";
 import { CtaComponent } from "./cta/cta.component";
+import { RouterModule } from "@angular/router";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,27 @@ import { CtaComponent } from "./cta/cta.component";
     ProjectsComponent,
     ContactComponent,
     ServicesComponent,
-    CtaComponent
+    CtaComponent,
+    HomeComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot([
+      {
+        path: "services",
+        component: ServicesComponent
+      },
+      {
+        path: "contact",
+        component: ContactComponent
+      },
+      {
+        path: "",
+        component: AppComponent
+      }
+    ])
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
