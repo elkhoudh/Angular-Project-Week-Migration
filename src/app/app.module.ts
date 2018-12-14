@@ -11,6 +11,7 @@ import { ServicesComponent } from "./services/services.component";
 import { CtaComponent } from "./cta/cta.component";
 import { RouterModule } from "@angular/router";
 import { HomeComponent } from './home/home.component';
+import { TestingComponent } from './testing/testing.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     ServicesComponent,
     CtaComponent,
-    HomeComponent
+    HomeComponent,
+    TestingComponent
   ],
   imports: [
     BrowserModule,
